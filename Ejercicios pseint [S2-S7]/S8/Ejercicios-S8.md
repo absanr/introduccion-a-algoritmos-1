@@ -3,7 +3,7 @@
 
 ## 1.1. Ejercicios explicativos 
 
-1.	Construir un algoritmo que permita ingresar un número entero y muestre si es negativo, creo o positivo.
+1.	#### Construir un algoritmo que permita ingresar un número entero y muestre si es negativo, creo o positivo.
 ```
 Proceso ceros  
     Definir num Como Entero  
@@ -21,7 +21,7 @@ Proceso ceros
 FinProceso 
 ```
 
-2.	A un trabajador le descuentan de su sueldo el 10% si su sueldo es menor o igual a 1000, por encima de 1000 hasta 2000 el 5% del adicional, y por encima de 2000 el 3% del adicional. Calcular el descuento y sueldo neto que recibe el trabajador dado un sueldo. 
+2.	#### A un trabajador le descuentan de su sueldo el 10% si su sueldo es menor o igual a 1000, por encima de 1000 hasta 2000 el 5% del adicional, y por encima de 2000 el 3% del adicional. Calcular el descuento y sueldo neto que recibe el trabajador dado un sueldo. 
 
 ```
 Proceso descuentos   
@@ -45,7 +45,7 @@ FinProceso
 
 ## 1.2. Ejercicios propuestos (Codigo Pseint - by Roger) 😉
 
-1.	Una empresa requiere un sistema de cálculo de bonos de fin de año para los trabajadores, elabore un algoritmo que reciba el salario mensual de un trabajador. Luego calcule y muestre sus utilidades si este se asigna como un porcentaje de lo que ha ganado durante el año dependiendo de su antigüedad en la empresa de acuerdo con la siguiente tabla: 
+1.	#### Una empresa requiere un sistema de cálculo de bonos de fin de año para los trabajadores, elabore un algoritmo que reciba el salario mensual de un trabajador. Luego calcule y muestre sus utilidades si este se asigna como un porcentaje de lo que ha ganado durante el año dependiendo de su antigüedad en la empresa de acuerdo con la siguiente tabla: 
 
 | Tiempo | Utilidad |
 | ----------- | -----------: |
@@ -60,21 +60,33 @@ FinProceso
 Loading code...
 ```
 
-2.	Ingresar la cantidad de alumnos aprobados y desaprobados de un curso. Luego mostrar el porcentaje de estudiantes aprobados y el porcentaje de estudiantes desaprobados. 
+2.	#### Ingresar la cantidad de alumnos aprobados y desaprobados de un curso. Luego mostrar el porcentaje de estudiantes aprobados y el porcentaje de estudiantes desaprobados. 
+
+##### *Copiar código:*
+```
+Proceso porcentaje_alumnos_aprobados_desaprobados
+	Definir aprobados, desaprobados, total Como Real;
+	
+	Escribir "Ingrese la cantidad de alumnos aprobados: ";
+	Leer aprobados;
+	Escribir "Ingrese la cantidad de alumnos desaprobados: ";
+	Leer desaprobados;
+	
+	total = aprobados + desaprobados;
+	
+	Escribir "Porcentaje de estudiantes aprobados: ", (aprobados / total) * 100, "%";
+	Escribir "Porcentaje de estudiantes desaprobados: ", (desaprobados / total) * 100, "%";
+FinProceso
+```
+
+3.	#### Elaborar un algoritmo para el siguiente caso: una empresa de seguros asegura una casa ante desastres cobrando una prima anual de acuerdo con el valor de la casa. Para los primeros $25000 cobra el 3% del valor y para el valor restante 5%. Por ejemplo, si una casa está valorizada en $30000, cobrará 3% sobre los $25000 y 5% al resto, es decir 5% a $500. Haga un programa que muestre el monto que un cliente debe pagar por asegurar su casa. Descarte casas con valores superiores a los $100000. 
 
 ##### *Copiar código:*
 ```
 Loading code...
 ```
 
-3.	Elaborar un algoritmo para el siguiente caso: una empresa de seguros asegura una casa ante desastres cobrando una prima anual de acuerdo con el valor de la casa. Para los primeros $25000 cobra el 3% del valor y para el valor restante 5%. Por ejemplo, si una casa está valorizada en $30000, cobrará 3% sobre los $25000 y 5% al resto, es decir 5% a $500. Haga un programa que muestre el monto que un cliente debe pagar por asegurar su casa. Descarte casas con valores superiores a los $100000. 
-
-##### *Copiar código:*
-```
-Loading code...
-```
-
-4.	Escribir un programa que determine si un año es bisiesto. Un año es bisiesto si es múltiplo de 4 (por ejemplo 1984). Los años múltiplos de 100 no son bisiestos, salvo si ellos son también múltiplos de 400 (2000 es bisiesto, pero 1800 no lo es) 
+4.	#### Escribir un programa que determine si un año es bisiesto. Un año es bisiesto si es múltiplo de 4 (por ejemplo 1984). Los años múltiplos de 100 no son bisiestos, salvo si ellos son también múltiplos de 400 (2000 es bisiesto, pero 1800 no lo es) 
 
 ##### *Copiar código:*
 ```
