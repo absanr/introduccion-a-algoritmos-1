@@ -1,7 +1,7 @@
 # 1. Separata de trabajo 06 – Estructuras condicionales simples y dobles anidadas 
 
 
-## 1.1. Ejercicios explicativos 
+<!-- ## 1.1. Ejercicios explicativos 
 
 1.	#### Construir un algoritmo que permita ingresar un número entero y muestre si es negativo, creo o positivo.
 ```
@@ -41,7 +41,7 @@ Proceso descuentos
     Escribir "Descuento:    S/", dscto   
     Escribir "Sueldo neto:  S/", sneto   
 FinProceso  
-```
+``` -->
 
 ## 1.2. Ejercicios propuestos (Codigo Pseint - by Roger) 😉
 
@@ -57,7 +57,36 @@ FinProceso
 
 ##### *Copiar código:*
 ```
-Loading code...
+Proceso calcularUtilidades
+	Definir salario, antiguedad, utilidades Como Real;
+	
+	Escribir "Ingrese el salario mensual del trabajador: ";
+	Leer salario;
+	Escribir "Ingrese la antig�edad del trabajador (en a�os): ";
+	Leer antiguedad;
+	
+	// salario anual
+	salario = salario * 12; 
+	Si antiguedad < 1 Entonces
+		utilidades = salario * 0.05;
+	SiNo
+		Si antiguedad >= 1 y antiguedad < 2 Entonces
+			utilidades = salario * 0.07;
+		SiNo
+			Si antiguedad >= 2 y antiguedad < 5 Entonces
+				utilidades = salario * 0.10;
+			SiNo
+				Si antiguedad >= 5 y antiguedad < 10 Entonces
+					utilidades = salario * 0.15;
+				SiNo
+					utilidades = salario * 0.20;
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	Escribir "Las utilidades del trabajador son: ", utilidades;
+FinProceso
 ```
 
 2.	#### Ingresar la cantidad de alumnos aprobados y desaprobados de un curso. Luego mostrar el porcentaje de estudiantes aprobados y el porcentaje de estudiantes desaprobados. 
@@ -83,7 +112,24 @@ FinProceso
 
 ##### *Copiar código:*
 ```
-Loading code...
+Proceso calcularPrima_segurodeCasa
+	Definir valor_casa, prima Como Real;
+	
+	Escribir "Ingrese el valor de la casa: ";
+	Leer valor_casa;
+	
+	Si valor_casa > 100000 Entonces
+		Escribir "La casa supera el valor m�ximo asegurable.";
+	Sino
+		Si valor_casa <= 25000 Entonces
+			prima = valor_casa * 0.03;
+		Sino
+			prima = 25000 * 0.03 + (valor_casa - 25000) * 0.05;
+		FinSi
+		Escribir "La prima anual es: $", prima;
+	FinSi
+FinProceso
+
 ```
 
 4.	#### Escribir un programa que determine si un año es bisiesto. Un año es bisiesto si es múltiplo de 4 (por ejemplo 1984). Los años múltiplos de 100 no son bisiestos, salvo si ellos son también múltiplos de 400 (2000 es bisiesto, pero 1800 no lo es) 
@@ -93,13 +139,13 @@ Loading code...
 Proceso determinar_si_un_anio_es_bisiesto
 	Definir anio Como Entero;
 	
-	Escribir "Ingrese un a�o: ";
+	Escribir "Ingrese un año: ";
 	Leer anio;
 	
 	Si (anio MOD 4 == 0 y anio MOD 100 <> 0) o (anio MOD 400 == 0) Entonces
-		Escribir "El a�o es bisiesto.";
+		Escribir "El año es bisiesto.";
 	Sino
-		Escribir "El a�o no es bisiesto.";
+		Escribir "El año no es bisiesto.";
 	FinSi
 FinProceso
 ```
