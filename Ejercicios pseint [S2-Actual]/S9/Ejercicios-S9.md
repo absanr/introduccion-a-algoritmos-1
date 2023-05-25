@@ -1,8 +1,8 @@
-# 1. Separata de trabajo 06 – Estructuras condicionales simples y dobles anidadas 
+# Separata de trabajo 07 – Estructuras condicionales múltiples 
 
 ## 1.2. Ejercicios propuestos (Codigo Pseint - by Roger) 😉
 
-1.	#### Una empresa de telecomunicaciones canadiense ofrece servicio de callback a un precio atractivo. El costo de las llamadas telefónicas depende tanto del lugar de origen de la llamada como de la zona geográfica en la que se encuentre el país destino. En la siguiente tabla se presenta el costo por 60 segundos para las llamadas originadas en Perú.  
+#### 1.	Una empresa de telecomunicaciones canadiense ofrece servicio de callback a un precio atractivo. El costo de las llamadas telefónicas depende tanto del lugar de origen de la llamada como de la zona geográfica en la que se encuentre el país destino. En la siguiente tabla se presenta el costo por 60 segundos para las llamadas originadas en Perú.  
 
 | Clave | Zona | Precio por minuto |
 | -----: | ---- | ----------------: |
@@ -30,7 +30,7 @@ Loading code...
 Loading code...
 ```
 
-3.	#### Realizar un algoritmo que permita representar los días de la semana correspondiente a los cuerpos celestes del Sistema solar, de tal forma que ingrese el nombre del día y el programa retorne el cuerpo celeste correspondiente según la siguiente tabla. 
+#### 3.	Realizar un algoritmo que permita representar los días de la semana correspondiente a los cuerpos celestes del Sistema solar, de tal forma que ingrese el nombre del día y el programa retorne el cuerpo celeste correspondiente según la siguiente tabla. 
 
 | Día | Cuerpo celeste |
 | --- | -------------- |
