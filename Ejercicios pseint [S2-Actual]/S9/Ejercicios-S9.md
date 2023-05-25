@@ -33,7 +33,7 @@ Loading code...
 3.	#### Realizar un algoritmo que permita representar los días de la semana correspondiente a los cuerpos celestes del Sistema solar, de tal forma que ingrese el nombre del día y el programa retorne el cuerpo celeste correspondiente según la siguiente tabla. 
 
 | Día | Cuerpo celeste |
-| --: | -------------: |
+| --- | -------------- |
 |Lunes		| Luna 		|
 |Martes 	| Marte 	|
 |Miércoles	| Mercurio 	|
