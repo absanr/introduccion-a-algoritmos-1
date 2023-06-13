@@ -5,7 +5,7 @@ Proceso calcularPrima_segurodeCasa
 	Leer valor_casa;
 	
 	Si valor_casa > 100000 Entonces
-		Escribir "La casa supera el valor m·ximo asegurable.";
+		Escribir "La casa supera el valor m√°ximo asegurable.";
 	Sino
 		Si valor_casa <= 25000 Entonces
 			prima = valor_casa * 0.03;
